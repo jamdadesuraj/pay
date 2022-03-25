@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --bgcolor: #f2f2f2;
+  --primary-color: #809fff;
+  --text-color: #828286;
+  --main-text-color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
+/* ----------------------------------------------navbar style css ------------------------------------------------------------ */
+.navbar-bg {
+  background-color: var(--bgcolor);
+  /* position: fixed; */
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar li {
+  padding: 0 2rem;
+}
+.navbar li a {
+  font-size: 1.7rem;
+  font-weight: 500;
+  z-index: 9999;
+}
+.navbar li a:hover {
+  color: var(--primary-color) !important;
+  text-shadow: 0 0.2rem 1.2rem 0 rgb(10, 65, 65);
+}
+.btn-style {
+  width: 12rem;
+  height: 4rem;
+  outline: none;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  /* background-color:var(--primary-color) !important; */
+  /* color:#fff; */
+  font-size: 1.2rem;
+}
+.btn-style:first-child {
+  margin-right: 2rem;
+}
+
+/* ----------------------------------------------header style css ------------------------------------------------------------ */
+header {
+  background: var(--bgcolor);
+  min-height: 100vh;
+  width: 100%;
+}
+.main_hero_container {
+  height: 80vh;
+  display: flex;
+  /* background-color:navy; */
+}
+.main_hero_container h1 {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.main_hero_para {
+  color: var(--text-color);
+  margin: 1.2rem 0 3rem 0;
+  font-size: 1rem;
+  width: 75%;
+}
+
+.main_hero_container h3 {
+  font-weight: lighter;
+}
+.main_hero_images {
+  position: relative;
+}
+.main_hero_images img {
+  width: 55%;
+  height: 65%;
+  border-radius: 2rem;
+  margin-top: 10rem;
+  box-shadow: 6px -3px 10px -2px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 6px -3px 10px -2px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 6px -3px 10px -2px rgba(0, 0, 0, 0.66);
+  /* position:absolute; */
+}
+.main_hero_images .main_hero_img2 {
+  position: absolute;
+  width: 30%;
+  height: 20%;
+  left: 55%;
+  top: -9%;
+}
+.input_group {
+  position: relative !important;
+  width: 85%;
+}
+.form-control-text {
+  position: absolute;
+  height: 3rem;
+  border: none;
+  outline-style: none;
+  font-size: 1.2rem;
+}
+.input-group-button {
+  position: absolute;
+  left: 58%;
+  top: 0.5rem;
+  /* line-height: 5rem; */
+  background: var(--primary-color);
+  border-radius: 1rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 768px) {
+  .input-group-button {
+    height: 3rem;
+    width: 15%;
+    font-size: 1rem;
+    top: 0;
+  }
+}
+
+/* ----------------------------------------------WorkAPi style css ------------------------------------------------------------ */
+.howitwork {
+  background-color: var(--bgcolor);
+}
+.main_section_container {
+  width: 80vw;
+  padding: 3rem;
+  box-shadow: -5px 2px 20px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -5px 2px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 2px 20px 0px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
+}
+.main_heading {
+  margin: 0 0 3rem 0;
+  text-transform: capitalize;
+}
+.font_awesome_style {
+  font-size: 1.7rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-right: 7rem;
+}
+.main_section_container h2 {
+  text-transform: capitalize;
+  margin-right: 7rem;
+}
+.main_section_container .main_hero_para {
+  text-align: center;
+}
+/* --------------------------------------------------useapp style------------------------------------------------ */
+.use_section {
+  background-color: var(--bgcolor);
+}
+.main_use_container {
+  height: 80vh;
+  background-color: var(--bgcolor);
+
+  padding-top: 10rem;
+}
+.main_use_container img {
+  width: 40%;
+  height: 80%;
+  /* padding-top: 5rem; */
+  margin-left: 10rem;
+
+  border-radius: 2rem;
+}
+.main_use_para {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.main_hero_heading {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.main_use_container h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.use_para {
+  width: 50%;
+}
+.use_btn {
+  border-radius: 2rem;
+  padding: 1rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+/* --------------------------------------------support style-------------------------------- */
+.support_section {
+  background-color: var(--bgcolor);
+}
+.main_support_container {
+  height: 80vh;
+}
+.main_support_container img {
+  width: 40%;
+  height: 80%;
+  /* padding-top: 5rem; */
+  margin-left: 10rem;
+
+  border-radius: 2rem;
+}
+.support_container {
+  /* border: 1px solid #333333; */
+  padding-left: 15rem;
+}
+.main_support_heading {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.main_support_container h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.main_support_para {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+@media screen and (max-width: 768px) {
+  .container,
+  .support_container,
+  .img .container-fluid {
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+}
+
+/* ------------------------------------------------send monry style------------------------------- */
+
+.send_money {
+  box-shadow: 0px -1px 3px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px -1px 3px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 3px -2px rgba(0, 0, 0, 0.75);
+  width: 25%;
+  margin-left: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container,
+  .container-fluid,
+  .send_money {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* -------------------------------contact style----------------------------- */
+.contact_section {
+  background-color: var(--bgcolor);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: auto;
+}
+
+.contact_heading {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.main_contact_container img {
+  width: 70%;
+  height: 30%;
+  border-radius: 2rem;
+}
+
+/* ------------------------------------footer styles------------------------------------ */
+.footer_section {
+  background-color: #001a1a;
+  height: auto;
+  /* margin-bottom: 20rem; */
+  margin-top: 0;
+}
+.footer_heading {
+  color: #fff;
+  text-transform: capitalize;
+}
+.footer_list ul {
+  list-style: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.footer_list .fab {
+  color: #0000b3;
+  padding: 0 0 0 20px;
+  font-size: 2rem;
+}
+.hr {
+  color: #fff;
+  margin-top: 5rem;
+}
+.footer_para {
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* ----------------------------------------------------resposive style -------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .container,
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 768px !important;
+  }
+}
+
+/* ----------------------------------------------WorkAPi style css ------------------------------------------------------------ */
